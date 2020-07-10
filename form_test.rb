@@ -2,9 +2,9 @@ require "selenium-webdriver"
 require "rspec"
 require "chromedriver-helper"
 
-$first_name = 'John'
-$last_name = 'Doe'
-$job_title = 'QA'
+$first_name = 'iTMS'
+$last_name = 'Coaching'
+$job_title = 'CEO'
 $date = '05/25/2025'
 $expected_banner_text = 'The form was successfully submitted!'
 
