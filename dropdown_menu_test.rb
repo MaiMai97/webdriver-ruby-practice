@@ -1,7 +1,7 @@
 require "selenium-webdriver"
 
 driver = Selenium::WebDriver.for :chrome
-driver.navigate.to "https://formy-project.herokuapp.com/dropdown"
+driver.navigate.to "https://itmscoaching.herokuapp.com/dropdown"
 
 dropdown_menu = driver.find_element(id: 'dropdownMenuButton')
 dropdown_menu.click

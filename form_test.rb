@@ -1,6 +1,5 @@
 require "selenium-webdriver"
 require "rspec"
-require "chromedriver-helper"
 
 $first_name = 'iTMS'
 $last_name = 'Coaching'
@@ -29,8 +28,8 @@ end
 
 describe "automating a form" do
   it "submits a form" do
-    driver = Selenium::WebDriver.for :chrome
-    driver.navigate.to "https://formy-project.herokuapp.com/form"
+    driver = Selenium::WebDriver.for :firefox
+    driver.navigate.to "https://itmscoaching.herokuapp.com/form"
     submit_form(driver)
     actual_banner_text = get_banner_text(driver)
     expect(actual_banner_text).to eql($expected_banner_text)

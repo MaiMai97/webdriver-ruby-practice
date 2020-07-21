@@ -1,7 +1,7 @@
 require "selenium-webdriver"
 
 driver = Selenium::WebDriver.for :chrome
-driver.navigate.to "https://formy-project.herokuapp.com/radiobutton"
+driver.navigate.to "https://itmscoaching.herokuapp.com/radiobutton"
 
 radio_button_1 = driver.find_element(id: 'radio-button-1')
 radio_button_1.click
