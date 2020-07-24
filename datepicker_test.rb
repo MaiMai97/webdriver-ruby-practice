@@ -1,6 +1,6 @@
 require "selenium-webdriver"
 
-driver = Selenium::WebDriver.for :chrome
+driver = Selenium::WebDriver.for :firefox
 driver.navigate.to "https://itmscoaching.herokuapp.com/datepicker"
 
 datefield = driver.find_element(id: 'datepicker')
